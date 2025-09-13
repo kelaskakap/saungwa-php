@@ -1,0 +1,29 @@
+{
+    "name": "kelaskakap/saungwa-php",
+    "description": "Unofficial Saungwa API client (WhatsApp gateway)",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kelaskakap\\SaungwaPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kelaskakap"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kelaskakap\\SaungwaPhp\\Laravel\\SaungwaServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
