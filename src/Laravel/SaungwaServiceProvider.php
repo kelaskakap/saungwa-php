@@ -34,7 +34,7 @@ class SaungwaServiceProvider extends ServiceProvider
         {
             $this->publishes([
                 __DIR__ . '/../config/saungwa.php' => config_path('saungwa.php'),
-            ], 'config');
+            ], 'saungwa-config');
         }
     }
 }

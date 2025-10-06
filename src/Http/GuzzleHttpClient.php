@@ -14,7 +14,7 @@ class GuzzleHttpClient implements HttpClientInterface
 
     public function __construct(string $baseUri, array $options = [])
     {
-        $this->baseUri = rtrim($baseUri, '/');
+        $this->baseUri = rtrim($baseUri, '/') . '/';
         $this->client = new Client(array_merge([
             'base_uri' => $this->baseUri,
             'timeout' => 30,

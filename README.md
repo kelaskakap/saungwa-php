@@ -89,7 +89,7 @@ print_r($response);
 2. Publish konfigurasi:
 
    ```bash
-   php artisan vendor:publish --tag=config
+   php artisan vendor:publish --tag=saungwa-config
    ```
 
 3. Atur di `.env`:
